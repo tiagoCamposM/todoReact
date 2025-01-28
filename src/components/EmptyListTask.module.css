@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 21.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--gray-400);
+    border-radius: 8px;
+    width: 50%;
+}
+
+.imgEmptyList{
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.firstText {
+    color: var(--gray-300);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.secondText {
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+

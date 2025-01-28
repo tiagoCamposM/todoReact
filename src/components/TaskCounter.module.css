@@ -1,0 +1,42 @@
+.containerTaskCounter {
+    position: absolute;
+    top: 17.5rem;
+    left: 50%;
+    transform: translateX(-50%); /* Ajusta a posição horizontalmente */
+    display: flex; /* Flexbox para alinhar os itens horizontalmente */
+    justify-content: space-between; /* Garante que os itens fiquem nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente */
+    width: 50%; /* Usar 100% para ocupar toda a largura disponível */
+    padding: 1rem;
+}
+
+.leftText, .rightText {
+    display: flex; /* Flexbox para alinhar texto e contador lado a lado */
+    align-items: center; /* Alinha o texto e contador verticalmente */
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.leftText {
+    color: var(--blue-500);
+}
+
+.rightText {
+    color: var(--purple-500);
+}
+
+.counter {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: var(--gray-200);
+    background-color: var(--gray-400);
+    padding: 0.75rem;
+    border-radius: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1.5rem;
+    height: 1.25rem;
+    text-align: center;
+}

@@ -1,0 +1,53 @@
+.appContainer  {
+    display: flex;
+    flex-direction: column;  /* Empilha os elementos na vertical */
+    align-items: center;     /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Alinha ao topo */
+    padding: 2rem 0;         /* Espaçamento superior e inferior */
+}
+
+.inputContainerTask {
+    position: absolute;
+    top: 10.875rem;
+    left: 50%;
+    transform: translateX(-50%); /* Ajusta a posição horizontalmente */
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    width: 50%; /* Ajuste para que o conteúdo não fique muito largo */
+}
+
+.inputTask {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    outline: none;
+    margin-right: 0.5rem;
+    height: 3.375rem;
+    width: 100%; /* Ajuste para o input preencher a largura disponível */
+    color: white;
+}
+
+.buttonAddTask {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: var(--blue-500);
+    height: 3.25rem;
+    width: 5.625rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.buttonAddTask:hover {
+    background: var(--blue-700);
+}

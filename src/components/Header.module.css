@@ -1,0 +1,32 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0;
+    width: 100%;
+    height: 12.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    margin-right: 0.75rem;
+    height: 2.25rem; 
+    width: 1.375rem;
+}
+
+.title {
+    font-size: 2.5rem; /* Tamanho do texto */
+    font-weight: 900;
+    display: flex; /* Permite separar as cores das letras */
+}
+
+.first {
+    color: var(--blue-500);
+}
+
+.second {
+    color: var(--purple-700);
+}
