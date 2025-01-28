@@ -1,20 +1,20 @@
 .appContainer  {
     display: flex;
-    flex-direction: column;  /* Empilha os elementos na vertical */
-    align-items: center;     /* Centraliza os itens horizontalmente */
-    justify-content: flex-start; /* Alinha ao topo */
-    padding: 2rem 0;         /* Espaçamento superior e inferior */
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    padding: 2rem 0;
+    z-index: 999;
+    margin-top: -3.625rem;
+             
 }
 
 .inputContainerTask {
-    position: absolute;
-    top: 10.875rem;
-    left: 50%;
-    transform: translateX(-50%); /* Ajusta a posição horizontalmente */
+    margin-bottom: 3.6875rem;
     display: flex;
     align-items: center;
-    z-index: 999;
-    width: 50%; /* Ajuste para que o conteúdo não fique muito largo */
+    width: 46rem;
+    height: 3.375rem;
 }
 
 .inputTask {
@@ -26,7 +26,7 @@
     outline: none;
     margin-right: 0.5rem;
     height: 3.375rem;
-    width: 100%; /* Ajuste para o input preencher a largura disponível */
+    width: 100%; 
     color: white;
 }
 
@@ -50,4 +50,9 @@
 
 .buttonAddTask:hover {
     background: var(--blue-700);
+}
+
+.listTaskContainer{
+    width: 46rem;
+    gap: 0.75rem;
 }

@@ -31,7 +31,7 @@
 }
 
 body {
-    background: var(--gbackgroundColor);
+    background: var(--backgroundColor);
     color: var(--gray-300);
     -webkit-font-smoothing: antialiased
 }

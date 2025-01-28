@@ -1,12 +1,9 @@
 .containerTaskCounter {
-    position: absolute;
-    top: 17.5rem;
-    left: 50%;
-    transform: translateX(-50%); /* Ajusta a posição horizontalmente */
     display: flex; /* Flexbox para alinhar os itens horizontalmente */
     justify-content: space-between; /* Garante que os itens fiquem nas extremidades */
     align-items: center; /* Alinha os itens verticalmente */
-    width: 50%; /* Usar 100% para ocupar toda a largura disponível */
+    width: 46rem;
+    height: auto;
     padding: 1rem;
 }
 

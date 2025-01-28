@@ -3,23 +3,28 @@ import styles from './App.module.css';
 import { Header } from './components/Header';
 import plusTaskIcon from './assets/plus.svg';
 import { TaskCounter } from './components/TaskCounter';
-import { EmptyListTask } from './components/EmptyListTask';
+import { TaskItem } from './components/TaskItem';
 
 export function App() {
   return (
-    <div className={styles.appContainer}>
+    <div >
       <Header />
-      <div className={styles.inputContainerTask}>
-        <input className={styles.inputTask} type="text" placeholder="Adicionar nova tarefa" />
-        <button className={styles.buttonAddTask}>
-          <img src={plusTaskIcon} alt="PlusIcon" />
-          Criar
-        </button>
+      <div className={styles.appContainer}>
+        <div className={styles.inputContainerTask}>
+          <input className={styles.inputTask} type="text" placeholder="Adicionar nova tarefa" />
+          <button className={styles.buttonAddTask}>
+            <img src={plusTaskIcon} alt="PlusIcon" />
+            Criar
+          </button>
+        </div>
+        <TaskCounter />
+
+        <div className={styles.listTaskContainer}>
+          <TaskItem/>
+          <TaskItem/>
+          <TaskItem/>
+        </div>
       </div>
-      <TaskCounter />
-
-      <EmptyListTask/>
-
     </div>
   );
 }

@@ -6,7 +6,6 @@
     padding: 1.25rem 0;
     width: 100%;
     height: 12.5rem;
-    position: fixed;
     top: 0;
     left: 0;
 }
@@ -18,9 +17,9 @@
 }
 
 .title {
-    font-size: 2.5rem; /* Tamanho do texto */
+    font-size: 2.5rem; 
     font-weight: 900;
-    display: flex; /* Permite separar as cores das letras */
+    display: flex; 
 }
 
 .first {
