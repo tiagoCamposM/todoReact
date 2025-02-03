@@ -1,8 +1,19 @@
 import style from "./TaskItem.module.css";
 import binIcon from '../assets/bin.svg'
+import {Task} from '../App'
 
-export function TaskItem() {
- 
+
+
+
+export function TaskItem({ task, onToggle, onDelete }: { task: Task; onToggle: (taskId: string) => void; onDelete: (idKey: string)=> void }) {
+
+  const handleChange = () => {
+    onToggle(task.idKey); 
+  };
+
+  const handleDelete = () => {
+    onDelete(task.idKey); 
+  };
 
   return (
     <div className={style.taskCard}>
@@ -10,12 +21,14 @@ export function TaskItem() {
         <input
             className={style.checkbox}
           type="checkbox"
+          checked={task.isDone}
+          onChange={handleChange}
         />
-        <span>
-          UM Texto muito longo para ver se está tudo ok com tudo que eu estou fazendo e tentando pois está dificil, mas vamos indo
+        <span className={task.isDone ? style.taskTextCompleted : style.taskText} >
+          {task.description}
         </span>
       </div>
-      <img src={binIcon}  className="delete-button"/>
+      <img onClick={handleDelete} src={binIcon}  className={style.deleteButton}/>
     </div>
   );
 }
